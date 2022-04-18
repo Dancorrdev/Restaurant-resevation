@@ -2058,7 +2058,7 @@
 											"font": "Arial;13;1",
 											"left": 853,
 											"top": 495,
-											"width": 115.984375,
+											"width": 163.67431640625,
 											"height": 13,
 											"text": "Restaurante"
 										},
@@ -2093,7 +2093,7 @@
 									"font": "Arial;13;0",
 									"left": 848,
 									"top": 488,
-									"width": 125.984375,
+									"width": 173.67431640625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGAD1O6vO32ypU="
@@ -2130,7 +2130,7 @@
 											"font": "Arial;13;0",
 											"left": 853,
 											"top": 518,
-											"width": 115.984375,
+											"width": 163.67431640625,
 											"height": 13,
 											"text": "-idRestaurante: int",
 											"horizontalAlignment": 0
@@ -2147,7 +2147,7 @@
 											"font": "Arial;13;0",
 											"left": 853,
 											"top": 533,
-											"width": 115.984375,
+											"width": 163.67431640625,
 											"height": 13,
 											"text": "-telefono: String",
 											"horizontalAlignment": 0
@@ -2164,7 +2164,7 @@
 											"font": "Arial;13;0",
 											"left": 853,
 											"top": 548,
-											"width": 115.984375,
+											"width": 163.67431640625,
 											"height": 13,
 											"text": "-direccion: String",
 											"horizontalAlignment": 0
@@ -2181,17 +2181,34 @@
 											"font": "Arial;13;0",
 											"left": 853,
 											"top": 563,
-											"width": 115.984375,
+											"width": 163.67431640625,
 											"height": 13,
 											"text": "-estado: bit",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGANQJbdkQiZEM=",
+											"_parent": {
+												"$ref": "AAAAAAGAD1O6vO36Law="
+											},
+											"model": {
+												"$ref": "AAAAAAGANQJbaEQfeBU="
+											},
+											"font": "Arial;13;0",
+											"left": 853,
+											"top": 578,
+											"width": 163.67431640625,
+											"height": 13,
+											"text": "-nombreRestaurante: String",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 848,
 									"top": 513,
-									"width": 125.984375,
-									"height": 68
+									"width": 173.67431640625,
+									"height": 83
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -2214,10 +2231,27 @@
 											},
 											"font": "Arial;13;0",
 											"left": 853,
-											"top": 586,
-											"width": 115.984375,
+											"top": 601,
+											"width": 163.67431640625,
 											"height": 13,
 											"text": "+getIdRestaurante()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGANQLJ+0Unchc=",
+											"_parent": {
+												"$ref": "AAAAAAGAD1O6vO37gIE="
+											},
+											"model": {
+												"$ref": "AAAAAAGANQLJ8EUkkVU="
+											},
+											"font": "Arial;13;0",
+											"left": 853,
+											"top": 616,
+											"width": 163.67431640625,
+											"height": 13,
+											"text": "+getNombreRestaurante()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2231,8 +2265,8 @@
 											},
 											"font": "Arial;13;0",
 											"left": 853,
-											"top": 601,
-											"width": 115.984375,
+											"top": 631,
+											"width": 163.67431640625,
 											"height": 13,
 											"text": "+getTelefono()",
 											"horizontalAlignment": 0
@@ -2248,8 +2282,8 @@
 											},
 											"font": "Arial;13;0",
 											"left": 853,
-											"top": 616,
-											"width": 115.984375,
+											"top": 646,
+											"width": 163.67431640625,
 											"height": 13,
 											"text": "+getDireccion()",
 											"horizontalAlignment": 0
@@ -2265,10 +2299,27 @@
 											},
 											"font": "Arial;13;0",
 											"left": 853,
-											"top": 631,
-											"width": 115.984375,
+											"top": 661,
+											"width": 163.67431640625,
 											"height": 13,
 											"text": "+getEstado()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGANQL9Z0bAjJ8=",
+											"_parent": {
+												"$ref": "AAAAAAGAD1O6vO37gIE="
+											},
+											"model": {
+												"$ref": "AAAAAAGANQL9YEa9dc4="
+											},
+											"font": "Arial;13;0",
+											"left": 853,
+											"top": 676,
+											"width": 163.67431640625,
+											"height": 13,
+											"text": "+setNombreRestaurante()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2282,8 +2333,8 @@
 											},
 											"font": "Arial;13;0",
 											"left": 853,
-											"top": 646,
-											"width": 115.984375,
+											"top": 691,
+											"width": 163.67431640625,
 											"height": 13,
 											"text": "+setTelefono()",
 											"horizontalAlignment": 0
@@ -2299,8 +2350,8 @@
 											},
 											"font": "Arial;13;0",
 											"left": 853,
-											"top": 661,
-											"width": 115.984375,
+											"top": 706,
+											"width": 163.67431640625,
 											"height": 13,
 											"text": "+setDireccion()",
 											"horizontalAlignment": 0
@@ -2316,8 +2367,8 @@
 											},
 											"font": "Arial;13;0",
 											"left": 853,
-											"top": 676,
-											"width": 115.984375,
+											"top": 721,
+											"width": 163.67431640625,
 											"height": 13,
 											"text": "+setEstado()",
 											"horizontalAlignment": 0
@@ -2325,9 +2376,9 @@
 									],
 									"font": "Arial;13;0",
 									"left": 848,
-									"top": 581,
-									"width": 125.984375,
-									"height": 113
+									"top": 596,
+									"width": 173.67431640625,
+									"height": 143
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -2366,8 +2417,8 @@
 							"containerChangeable": true,
 							"left": 848,
 							"top": 488,
-							"width": 125.984375,
-							"height": 206,
+							"width": 173.67431640625,
+							"height": 251,
 							"nameCompartment": {
 								"$ref": "AAAAAAGAD1O6vO31N+w="
 							},
@@ -4087,8 +4138,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 797,
-									"top": 609,
+									"left": 795,
+									"top": 623,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -4108,8 +4159,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 799,
-									"top": 624,
+									"left": 795,
+									"top": 638,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -4129,8 +4180,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 794,
-									"top": 580,
+									"left": 796,
+									"top": 593,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -4150,8 +4201,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 822,
-									"top": 607,
+									"left": 821,
+									"top": 622,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -4171,8 +4222,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 821,
-									"top": 621,
+									"left": 818,
+									"top": 636,
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -4191,8 +4242,8 @@
 										"$ref": "AAAAAAGAD5FkgvyyhpU="
 									},
 									"font": "Arial;13;0",
-									"left": 815,
-									"top": 579,
+									"left": 816,
+									"top": 595,
 									"width": 19.5126953125,
 									"height": 13,
 									"alpha": -0.5235987755982988,
@@ -4214,8 +4265,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 772,
-									"top": 613,
+									"left": 770,
+									"top": 622,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -4234,8 +4285,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 776,
-									"top": 626,
+									"left": 773,
+									"top": 636,
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -4253,8 +4304,8 @@
 										"$ref": "AAAAAAGAD5FkgvyzpJg="
 									},
 									"font": "Arial;13;0",
-									"left": 762,
-									"top": 586,
+									"left": 763,
+									"top": 595,
 									"width": 7.22998046875,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -4301,7 +4352,7 @@
 								"$ref": "AAAAAAGAD1O6u+30TTI="
 							},
 							"lineStyle": 1,
-							"points": "847:596;745:607",
+							"points": "847:614;745:614",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGAD5Fkg/y28Bk="
@@ -4358,8 +4409,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 896,
-									"top": 408,
+									"left": 907,
+									"top": 409,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -4379,8 +4430,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 881,
-									"top": 408,
+									"left": 892,
+									"top": 410,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -4400,8 +4451,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 925,
-									"top": 409,
+									"left": 936,
+									"top": 408,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -4421,8 +4472,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 896,
-									"top": 454,
+									"left": 910,
+									"top": 456,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -4442,8 +4493,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 882,
-									"top": 452,
+									"left": 896,
+									"top": 454,
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -4462,8 +4513,8 @@
 										"$ref": "AAAAAAGAD5HyOv/LPDM="
 									},
 									"font": "Arial;13;0",
-									"left": 914,
-									"top": 459,
+									"left": 929,
+									"top": 458,
 									"width": 19.5126953125,
 									"height": 13,
 									"alpha": -0.5235987755982988,
@@ -4485,8 +4536,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 896,
-									"top": 363,
+									"left": 904,
+									"top": 364,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -4505,8 +4556,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 883,
-									"top": 366,
+									"left": 891,
+									"top": 368,
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -4524,8 +4575,8 @@
 										"$ref": "AAAAAAGAD5HyOv/MKU4="
 									},
 									"font": "Arial;13;0",
-									"left": 915,
-									"top": 359,
+									"left": 922,
+									"top": 358,
 									"width": 19.5126953125,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -4572,7 +4623,7 @@
 								"$ref": "AAAAAAGAD1O6u+30TTI="
 							},
 							"lineStyle": 1,
-							"points": "911:487;912:344",
+							"points": "927:487;918:344",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGAD5HyOv/Pj6U="
@@ -5540,6 +5591,16 @@
 							"name": "estado",
 							"visibility": "private",
 							"type": "bit"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGANQJbaEQfeBU=",
+							"_parent": {
+								"$ref": "AAAAAAGAD1O6u+3yQq8="
+							},
+							"name": "nombreRestaurante",
+							"visibility": "private",
+							"type": "String"
 						}
 					],
 					"operations": [
@@ -5550,6 +5611,14 @@
 								"$ref": "AAAAAAGAD1O6u+3yQq8="
 							},
 							"name": "getIdRestaurante"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGANQLJ8EUkkVU=",
+							"_parent": {
+								"$ref": "AAAAAAGAD1O6u+3yQq8="
+							},
+							"name": "getNombreRestaurante"
 						},
 						{
 							"_type": "UMLOperation",
@@ -5574,6 +5643,14 @@
 								"$ref": "AAAAAAGAD1O6u+3yQq8="
 							},
 							"name": "getEstado"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGANQL9YEa9dc4=",
+							"_parent": {
+								"$ref": "AAAAAAGAD1O6u+3yQq8="
+							},
+							"name": "setNombreRestaurante"
 						},
 						{
 							"_type": "UMLOperation",
