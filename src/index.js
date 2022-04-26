@@ -19,6 +19,10 @@ app.use(express.json());
 app.use(require("../src/routes/index.routes"));
 app.use("/reservation", require("../src/routes/reservation.routes"));
 
+//Public
+app.use(express.static(path.join(__dirname, 'css')))
+app.use(express.static(path.join(__dirname, 'js')))
+
 //Iniciando Server
 app.listen(app.get("puerto"), () => {
   console.log("Server on port: ", app.get("puerto"));

@@ -1,0 +1,39 @@
+<%- include ('../partials/header') -%>
+    <%- include ('../partials/nav') -%>
+    <div class="container p-4">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Nueva Reservacion</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/reservation/new" method="post">
+                        <div class="form-group">
+                            <label for="" class="form-label">Nombre del Cliente</label>
+                            <input type="text" class="form-control" placeholder="Esperanza Rojas">                           
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">Numero de identificacion</label>
+                            <input type="text" class="form-control" placeholder="49344236">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">Numero de personas</label>
+                            <input type="number" class="form-control" placeholder="15">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">Fecha de la reservacion</label>
+                            <input type="date" class="form-control" placeholder="">
+                            <br>
+                            <input type="time" class="form-control" placeholder="">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">Guardar</button>
+                            <a href="/reservation" class="btn btn-danger btn-block">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include ('../partials/footer') -%>
