@@ -1,0 +1,60 @@
+<%- include ('../partials/header') -%>
+<nav
+  class="navbar navbar-expand-lg navbar-lighter"
+  style="background-color: #e60008"
+>
+  <a class="navbar-brand" style="color: #fff" href="#"
+    >Restaruant Reservation</a
+  >
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto"></ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+        Cerrar Sesión
+      </button>
+    </form>
+  </div>
+</nav>
+<div class="d-flex" id="wrapper">
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <br />
+      <h2>Usuarios</h2>
+      <br />
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Identificador</th>
+            <th scope="col">Tipo documento</th>
+            <th scope="col">Numero Documento</th>
+            <th scope="col">Nombres</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Celular</th>
+            <th scope="col">Roll</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">0000001</th>
+            <td>C.C.</td>
+            <td>1193539588</td>
+            <td>Andres Santiago</td>
+            <td>Vaca Barreto</td>
+            <td>avaca@ucompensar.edu.co</td>
+            <td>3196613790</td>
+            <td>Gestor</td>
+            <td>Activo</td>
+            <td>
+              <button class="btn btn-primary">Editar</button>
+              <a class="btn btn-danger" href="/">Deshabilitar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<%- include ('../partials/footer') -%>

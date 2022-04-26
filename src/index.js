@@ -18,6 +18,8 @@ app.use(express.json());
 //Rutas
 app.use(require("../src/routes/index.routes"));
 app.use("/reservation", require("../src/routes/reservation.routes"));
+app.use("/users", require("../src/routes/users.routes"));
+
 
 //Public
 app.use(express.static(path.join(__dirname, 'css')))
