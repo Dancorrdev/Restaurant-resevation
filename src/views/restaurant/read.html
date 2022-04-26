@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	  <link href="../../css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/679194c6db.js" crossorigin="anonymous"></script>
+    <title>Consulta Restaurantes</title>
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-lighter " style="background-color: #E60008;">
+            <a class="navbar-brand" style="color: #FFF;" href="#">Restaurant Reservation</a>
+		        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto"></ul>
+              <form class="form-inline my-2 my-lg-0">			  
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cerrar Sesión</button>
+              </form>
+		        </div>
+	      </nav>
+		    <div class="d-flex" id="wrapper">
+          <div id="page-content-wrapper">
+            <div class="container-fluid"><br>
+              
+              <div class="form-row">
+                <div class="col">
+                  <h2>Restaurantes</h2>
+                  <button class="btn btn-danger align-text-bottom"><i class="fa-solid fa-square-plus"></i> Crear Restaurante</button>
+                  </div>    
+                  <div class="col">
+                  </div>
+                </div>    
+                <br>
+                  <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Identificador</th>
+                        <th scope="col">Nombre del restaurante</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Dirección</th>                        
+                        <th scope="col">Estado</th>                            
+                        <th scope="col">Acciones</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">0000001</th>
+                            <td>KFC</td>
+                            <td>3196613780</td>
+                            <td>Cra 9 este #52 - 23</td>                            
+                            <td>Activo</td>
+                            <td>
+                              <button class="btn btn-Primary"><i class="fa-solid fa-pencil"></i> Editar</button>
+                              <button class="btn btn-danger"> <i class="fa-solid fa-square-minus"></i> Deshabilitar</button>
+                            </td>                            
+                        </tr>
+                      </tbody>
+                  </table>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/scripts.js"></script>
+    </body>
+</html>
