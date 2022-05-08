@@ -1,8 +1,11 @@
+CREATE DATABASE restaurantReservation;
+USE restaurantReservation;
+
 CREATE TABLE `parametros` (
  `idParametros` int(11) NOT NULL AUTO_INCREMENT,
  `parametro` varchar(30) NOT NULL,
  PRIMARY KEY (`idParametros`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4
+);
 
 CREATE TABLE `restaurantes` (
  `idRestaurante` int(11) NOT NULL AUTO_INCREMENT,
@@ -11,7 +14,7 @@ CREATE TABLE `restaurantes` (
  `direccion` varchar(50) NOT NULL,
  `estado` tinyint(1) NOT NULL,
  PRIMARY KEY (`idRestaurante`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4
+);
 
 CREATE TABLE `parametrosrestaurantes` (
  `idParametroRestaurante` int(11) NOT NULL AUTO_INCREMENT,
@@ -23,21 +26,21 @@ CREATE TABLE `parametrosrestaurantes` (
  KEY `FK_parametros_restaurante_restaurantes` (`idRestaurante`),
  CONSTRAINT `FK_parametros_restaurante_parametros` FOREIGN KEY (`idParametro`) REFERENCES `parametros` (`idParametros`),
  CONSTRAINT `FK_parametros_restaurante_restaurantes` FOREIGN KEY (`idRestaurante`) REFERENCES `restaurantes` (`idRestaurante`)
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4
+);
 
 CREATE TABLE `roles` (
  `idRoll` int(11) NOT NULL AUTO_INCREMENT,
  `roll` varchar(20) NOT NULL,
  `estado` tinyint(1) NOT NULL,
  PRIMARY KEY (`idRoll`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4
+);
 
 CREATE TABLE `tipodocumento` (
  `idTipoDocumento` int(11) NOT NULL AUTO_INCREMENT,
  `tipoDocumento` varchar(20) NOT NULL,
  `estado` tinyint(1) NOT NULL,
  PRIMARY KEY (`idTipoDocumento`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4
+);
 
 CREATE TABLE `usuarios` (
  `idUsuario` int(11) NOT NULL AUTO_INCREMENT,
@@ -55,7 +58,7 @@ CREATE TABLE `usuarios` (
  KEY `FK_roles_usuarios` (`idRoll`),
  CONSTRAINT `FK_roles_usuarios` FOREIGN KEY (`idRoll`) REFERENCES `roles` (`idRoll`),
  CONSTRAINT `FK_tipo_documento_usuarios` FOREIGN KEY (`idTipoDocumento`) REFERENCES `tipodocumento` (`idTipoDocumento`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4
+);
 
 CREATE TABLE `reservas` (
  `idReserva` int(11) NOT NULL AUTO_INCREMENT,
@@ -71,7 +74,7 @@ CREATE TABLE `reservas` (
  KEY `FK_reservas_restaurantes` (`idRestaurante`),
  CONSTRAINT `FK_reservas_restaurantes` FOREIGN KEY (`idRestaurante`) REFERENCES `restaurantes` (`idRestaurante`),
  CONSTRAINT `FK_reservas_usuarios` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4
+);
 
 
 INSERT INTO `tipodocumento`( `tipoDocumento`, `estado`) VALUES ('C.C','1');
