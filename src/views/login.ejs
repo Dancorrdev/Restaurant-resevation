@@ -1,10 +1,10 @@
-<html>
+<%- include ('./partials/header') -%>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="../css/login.css">    
+    <link rel="stylesheet" type="text/css" href="/login.css">    
 </head>
-    <body>
+    <body class="bg-image">
         <div class="login">
             <div class="divCenter">
                 <h1>Bienvenido</h1>
@@ -27,12 +27,10 @@
                     <a href="" class="btn btn-danger btn-block">
                         Ingresar
                     </a>
-                    <a href="/queries/recoverPasswords.html" class="btn btn-danger btn-block">
+                    <a href="/password/reset" class="btn btn-danger btn-block">
                         Cambiar contraseña
                     </a>
                 </form>
               </div>
         </div>
-
-    </body>
-</html>
+<%- include ('./partials/footer') -%>

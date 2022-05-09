@@ -24,6 +24,7 @@ app.use("/users", require("../src/routes/users.routes"));
 //Public
 app.use(express.static(path.join(__dirname, 'css')))
 app.use(express.static(path.join(__dirname, 'js')))
+app.use(express.static(path.join(__dirname, 'img')))
 
 //Iniciando Server
 app.listen(app.get("puerto"), () => {

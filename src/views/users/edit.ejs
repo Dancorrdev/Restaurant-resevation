@@ -15,17 +15,17 @@
         <h3>Editar Usuario</h3>
       </div>
       <div class="card-body">
-        <form action="/users/edit" method="post">
+        <form action="/users/edit/<%= user.idUsuario %>" method="post">
           <div class="form-group">
             <label for="" class="form-label">Tipo Documento</label>
-            <input type="text" class="form-control" value="C.C" disabled />
+            <input type="text" class="form-control" value="<%= tipDoc.tipoDocumento %>" disabled />
           </div>
           <div class="form-group">
             <label for="" class="form-label">Numero de documento</label>
             <input
               type="text"
               class="form-control"
-              value="1193539588"
+              value="<%= user.documento %>"
               disabled
             />
           </div>
@@ -34,7 +34,7 @@
             <input
               type="text"
               class="form-control"
-              value="Andres Santiago"
+              value="<%= user.nombres %>"
               disabled
             />
           </div>
@@ -43,7 +43,7 @@
             <input
               type="text"
               class="form-control"
-              value="Vaca Barreto"
+              value="<%= user.apellidos %>"
               disabled
             />
           </div>
@@ -52,27 +52,28 @@
             <input
               type="text"
               class="form-control"
-              value="avaca@ucompensar.edu.co"
+              name="correo"
+              value="<%= user.correo %>"
             />
           </div>
           <div class="form-group">
             <label for="" class="form-label">Celular</label>
-            <input type="text" class="form-control" value="3124564546" />
+            <input type="text" class="form-control" name="celular" value="<%= user.celular %>" />
           </div>
           <div class="form-group">
             <label for="" class="form-label">Roll</label>
             <select class="form-control" id="exampleFormControlSelect1">
-              <option>Mesero</option>
-              <option>Admin</option>
-              <option>Cliente</option>
-              <option>Recepcionista</option>
+              <option value="Mesero">Mesero</option>
+              <option value="Administrador">Administrador</option>
+              <option value="Cliente">Cliente</option>
+              <option value="Recepcionista">Recepcionista</option>
             </select>
           </div>
           <div class="form-group">
             <label for="" class="form-label">Estado</label>
             <select class="form-control" id="exampleFormControlSelect1">
-              <option>Activo</option>
-              <option>Inactivo</option>
+              <option value="Activo">Activo</option>
+              <option value="Inactivo">Inactivo</option>
             </select>
           </div>
           <br />

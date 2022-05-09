@@ -1,8 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
+router.get("/password/reset", (req, res) => {
+  res.render("queries/recoverPasswords");
+});
+
 router.get("/", (req, res) => {
-  res.send("Hello");
+  res.render("login");
 });
 
 module.exports = router;
