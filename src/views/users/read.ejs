@@ -1,26 +1,13 @@
 <%- include ('../partials/header') -%>
-<header>
-  <nav
-    class="navbar navbar-expand-lg navbar-lighter"
-    style="background-color: #e60008"
-  >
-    <a class="navbar-brand" style="color: #fff" href="#"
-      >Restaruant Reservation</a
-    >
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto"></ul>
-      <form class="form-inline my-2 my-lg-0">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-          Cerrar Sesión
-        </button>
-      </form>
-    </div>
-  </nav>
-</header>
+<%- include ('../partials/nav') -%>
+
 <body>
-  <div class="d-flex" id="wrapper">
+
+<div class="container p-3">
+  <div class="card">
+    <div class="d-flex" id="wrapper">
     <div id="page-content-wrapper">
-      <div class="container-fluid">
+      <div class=" ml-5 mr-5">
         <br />
         <h2>Usuarios</h2>
         <br />
@@ -70,5 +57,7 @@
       </div>
     </div>
   </div>
+</div>
+</div>
 </body>
 <%- include ('../partials/footer') -%>

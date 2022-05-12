@@ -13,7 +13,7 @@ router.post("/new", (req, res) =>{
 })
 
 router.get("/", (req, res) => {
-  res.render("queries/reservationsReception");
+  res.render("reservation/reservationsReception");
 });
 
 
