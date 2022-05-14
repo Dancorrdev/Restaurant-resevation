@@ -19,6 +19,8 @@ app.use(express.json());
 app.use(require("../src/routes/index.routes"));
 app.use("/reservation", require("../src/routes/reservation.routes"));
 app.use("/users", require("../src/routes/users.routes"));
+app.use("/restaurants", require("../src/routes/restaurants.routes"));
+
 
 
 //Public
