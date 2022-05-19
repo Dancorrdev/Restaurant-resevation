@@ -4,30 +4,12 @@
             <!-- Page content wrapper-->
             <div id="page-content-wrapper">
                 <div class="container-fluid"><br>
-                  <form class="form-inline">
-                    <div class="form-row">
-                      <div class="col">
-                        <h3>Buscar:</h3>
-                      </div>
-                      <div class="col">
-                        <label>Tipo Documento:</label>
-                      </div>
-                      <div class="col">
-                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                          <option selected>C.C</option>
-                          <option value="1">C.E</option>
-                          <option value="2">T.I</option>
-                          <option value="3">NIT</option>
-                        </select>
-                      </div>
-                      <div class="col">
-                        <label> Documento:</label>
-                      </div>
-                      <div class="col">
-                        <input type="text" class="form-control" placeholder="Documento">
-                      </div>
-                    </div>
-                </form>
+                  <br />
+                  <h2>Mis Reservas</h2>
+                  <a href="/reservation/new" class="btn btn-danger align-text-bottom">
+                    <i class="fa-solid fa-square-plus"></i> Crear Reserva
+                  </a>
+                  <br />
                   <br>
                     <table class="table">
                         <thead class="thead-dark">
@@ -36,7 +18,7 @@
                             <th scope="col">Fecha Reserva</th>
                             <th scope="col">Hora Reserva</th>
                             <th scope="col">Cantidad personas</th>
-                            <th scope="col">¿Mesa Lista?</th>
+                            <th scope="col">Restaurante</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -45,7 +27,7 @@
                             <td>31/12/2022</td>
                             <td>11:30</td>
                             <td>5</td>
-                            <td><input type="checkbox"></td></td>
+                            <td>KFC</td>
                           </tr>
                         </tbody>
                       </table>
