@@ -3,16 +3,21 @@
 
 <body>
 
-<div class="container p-3">
+<div class="p-5">
   <div class="card">
     <div class="d-flex" id="wrapper">
     <div id="page-content-wrapper">
       <div class=" ml-5 mr-5">
-        <br />
-        <h2>Usuarios</h2>
-        <br />
         <section>
-          <table class="table">
+          <div class="d-flex bd-highlight mb-3">
+            <h2 class="p-3">Usuarios</h2>
+              <div class="ml-auto p-3">
+                  <a href="/users/new" class="btn btn-success"> Nuevo Usuario </a>
+              </div>    
+          </div>
+      </section>  
+        <section>
+          <table class="table table-bordered table-sm text-center">
             <thead class="thead-dark">
               <tr>
                 <th scope="col">Identificador</th>
@@ -28,7 +33,7 @@
               </tr>
             </thead>
             <% for (let i = 0;  i < users.length;  i++) { %>
-            <tbody>
+            <tbody class="p-4">
               <tr>
                 <th scope="row"> <%= i + 1 %> </th>
                 <td> <%= tipDoc[i].tipoDocumento %> </td>
@@ -46,7 +51,7 @@
                   <td> Inactivo </td>
                 <% } %>
                 <td>
-                  <a class="btn btn-primary" href="/users/edit/<%= users[i].idUsuario %>">Editar</a>
+                  <a class="btn btn-primary" href="/users/edit/<%= users[i].idUsuario %>"><i class="far fa-pencil"></i>Editar</a>
                   <a class="btn btn-danger" href="/">Deshabilitar</a>
                 </td>
               </tr>

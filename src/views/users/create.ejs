@@ -1,14 +1,4 @@
 <%- include ('../partials/header') -%>
-
-<nav
-  class="navbar navbar-expand-lg navbar-lighter"
-  style="background-color: #e60008"
->
-  <div class="container-fluid">
-    <a style="color: #fff" class="navbar-brand">Restauran Reservation</a>
-  </div>
-</nav>
-
 <div class="container p-4">
   <div class="col-md-4 mx-auto">
     <div class="card">
@@ -16,7 +6,7 @@
         <h3>Registrar Usuario</h3>
       </div>
       <div class="card-body">
-        <form action="/reservacion" method="post">
+        <form action="/users/new" method="post">
           <div class="form-group">
             <label for="" class="form-label">Tipo Documento</label>
             <select class="form-control" id="exampleFormControlSelect1">
@@ -28,11 +18,11 @@
           </div>
           <div class="form-group">
             <label for="" class="form-label">Numero de documento</label>
-            <input type="text" class="form-control" />
+            <input type="text" class="form-control" name="documento" />
           </div>
           <div class="form-group">
             <label for="" class="form-label">Nombres</label>
-            <input type="text" class="form-control" />
+            <input type="text" class="form-control" name="nombres"/>
           </div>
           <div class="form-group">
             <label for="" class="form-label">Apellidos</label>
@@ -74,7 +64,7 @@
           <br />
           <div class="form-group">
             <button class="btn btn-danger">Crear</button>
-            <a href="/reservaciones" class="btn btn-secondary">Cancelar</a>
+            <a href="/users" class="btn btn-secondary">Cancelar</a>
           </div>
         </form>
       </div>
