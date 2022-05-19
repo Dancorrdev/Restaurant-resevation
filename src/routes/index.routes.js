@@ -9,4 +9,8 @@ router.get("/", (req, res) => {
   res.render("login");
 });
 
+router.get("/users/create", (req, res) => {
+  res.render("users/create");
+});
+
 module.exports = router;
