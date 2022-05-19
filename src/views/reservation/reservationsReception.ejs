@@ -1,36 +1,39 @@
-<%- include ('../partials/header') -%>
-<%- include ('../partials/nav') -%>
-	
-            <!-- Page content wrapper-->
-            <div id="page-content-wrapper">
-                <div class="container-fluid"><br>
-                  <br />
-                  <h2>Mis Reservas</h2>
-                  <a href="/reservation/new" class="btn btn-danger align-text-bottom">
-                    <i class="fa-solid fa-square-plus"></i> Crear Reserva
-                  </a>
-                  <br />
-                  <br>
-                    <table class="table">
-                        <thead class="thead-dark">
-                          <tr>
-                            <th scope="col">Documento</th>
-                            <th scope="col">Fecha Reserva</th>
-                            <th scope="col">Hora Reserva</th>
-                            <th scope="col">Cantidad personas</th>
-                            <th scope="col">Restaurante</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">123456789</th>
-                            <td>31/12/2022</td>
-                            <td>11:30</td>
-                            <td>5</td>
-                            <td>KFC</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                </div>
-            </div>
-        <%- include ('../partials/footer') -%>
+<%- include ('../partials/header') -%> <%- include ('../partials/nav') -%>
+<div class="container p-4">
+  <div class="card ml-5 mr-5">
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <br />
+        <br />
+        <h2>Mis Reservas</h2>
+        <a href="/reservation/new" class="btn btn-danger align-text-bottom">
+          <i class="fa-solid fa-square-plus"></i> Crear Reserva
+        </a>
+        <br />
+        <br />
+        <table class="table table-bordered table-sm text-center">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Documento</th>
+              <th scope="col">Fecha Reserva</th>
+              <th scope="col">Hora Reserva</th>
+              <th scope="col">Cantidad personas</th>
+              <th scope="col">Restaurante</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">123456789</th>
+              <td>31/12/2022</td>
+              <td>11:30</td>
+              <td>5</td>
+              <td>KFC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include ('../partials/footer') -%>

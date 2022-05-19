@@ -1,58 +1,59 @@
-<%- include ('../partials/header.ejs') -%> 
-<%- include('../partials/nav.ejs') -%>
-
-<div class="d-flex" id="">
-  <div id="page-content-wrapper">
-    <div class="container-fluid">
-      <br />
-
-      <div class="">
-        <div class="">
+<%- include ('../partials/header.ejs') -%> <%- include('../partials/nav.ejs')
+-%>
+<div class="container p-4">
+  <div class="card ml-5 mr-5">
+    <div class="d-flex" id="">
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <br />
           <h2>Restaurantes</h2>
           <a href="/restaurants/new" class="btn btn-danger align-text-bottom">
             <i class="fa-solid fa-square-plus"></i> Crear Restaurante
           </a>
-        </div>
-        <div class="col"></div>
-      </div>
-      <br />
-      <div class="card">
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Identificador</th>
-              <th scope="col">Nombre del restaurante</th>
-              <th scope="col">Telefono</th>
-              <th scope="col">Dirección</th>
-              <th scope="col">Estado</th>
-              <th scope="col">Acciones</th>
-            </tr>
-          </thead>
-          <% for (let i=0; i < restaurant.length; i++) { %>
-          <tbody>
-            <tr>
-              <th scope="row"><%= i + 1 %></th>
-              <td><%= restaurant[i].nombreRestaurante %></td>
-              <td><%= restaurant[i].telefono %></td>
-              <td><%= restaurant[i].direccion %></td>
-              <% if (restaurant[i].estado == 1) { %>
-                <td> Activo </td>
-              <% }else { %>
-                <td> Inactivo </td>
-              <% } %>
+          <br />
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Identificador</th>
+                <th scope="col">Nombre del restaurante</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Dirección</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <% for (let i=0; i < restaurant.length; i++) { %>
+            <tbody>
+              <tr>
+                <th scope="row"><%= i + 1 %></th>
+                <td><%= restaurant[i].nombreRestaurante %></td>
+                <td><%= restaurant[i].telefono %></td>
+                <td><%= restaurant[i].direccion %></td>
+                <% if (restaurant[i].estado == 1) { %>
+                <td>Activo</td>
+                <% }else { %>
+                <td>Inactivo</td>
+                <% } %>
 
-              <td>
-                <a href="/restaurants/edit/<%= restaurant[i].idRestaurante %>" class="btn btn-primary">
-                  <i class="fa-solid fa-pencil"></i> Editar
-                </a>
-                <a href="/restaurants/delete/<%= restaurant[i].idRestaurante %>" class="btn btn-danger">
-                  <i class="fa-solid fa-square-minus"></i> Deshabilitar
-                </a>
-              </td>
-            </tr>
-          </tbody>
-          <% } %>
-        </table>
+                <td>
+                  <a
+                    href="/restaurants/edit/<%= restaurant[i].idRestaurante %>"
+                    class="btn btn-primary"
+                  >
+                    <i class="fa-solid fa-pencil"></i> Editar
+                  </a>
+                  <a
+                    href="/restaurants/delete/<%= restaurant[i].idRestaurante %>"
+                    class="btn btn-danger"
+                  >
+                    <i class="fa-solid fa-square-minus"></i> Deshabilitar
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <% } %>
+          </table>
+        </div>
       </div>
     </div>
   </div>
