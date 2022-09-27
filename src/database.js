@@ -1,3 +1,5 @@
+
+/* Ejemplo de Base de datos
 const mysql = require('mysql');
 const { promisify } = require('util');
 const { database } = require('./keys');
@@ -25,3 +27,4 @@ pool.getConnection((err, connection) => {
 pool.query = promisify(pool.query);
 
 module.exports = pool;
+*/
