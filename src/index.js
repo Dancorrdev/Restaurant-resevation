@@ -11,9 +11,17 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 //Middelwares
+app.use(session({
+  secret: 'myslq-node',
+  resave: false,
+  saveUninitialized: false,
+  store: new MySQLStore(database)
+}));
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(passport.initialize());
+app.use(passport.session());
 
 //Rutas
 app.use(require("../src/routes/index.routes"));
