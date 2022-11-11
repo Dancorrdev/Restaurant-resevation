@@ -27,11 +27,11 @@ passport.use(
 );
 
 passport.use('local.login', new LocalStrategy({
-    usernameField: "nombreusuario",
+    usernameField: "documento",
     passwordField: "contrasenia",
     passReqToCallback: true
 }, async (req, nombreusuario, contrasenia, done) => {
-  const filas = await pool.query('SELECT * FROM usuario WHERE nombreusuario = ?', [nombreusuario]);
+  const filas = await pool.query('SELECT * FROM usuarios WHERE nombreusuario = ?', [nombreusuario]);
   if (filas.length > 0){
     const usuario = filas[0];
     const contraseniaValida = await helpers.verificarcontraseña(contrasenia, usuario.contrasenia);
