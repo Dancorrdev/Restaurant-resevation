@@ -13,6 +13,7 @@ CREATE TABLE `restaurantes` (
  `telefono` varchar(20) NOT NULL,
  `direccion` varchar(50) NOT NULL,
  `estado` tinyint(1) NOT NULL,
+ `departamento` varchar(50) NOT NULL,
  PRIMARY KEY (`idRestaurante`)
 );
 
@@ -108,9 +109,9 @@ INSERT INTO `parametros`(`parametro`) VALUES ('Hora apertura Reservas');
 INSERT INTO `parametros`(`parametro`) VALUES ('Hora cierre Revservas');
 INSERT INTO `parametros`(`parametro`) VALUES ('Tiempo reserva en minutos');
 
-INSERT INTO `restaurantes`(`nombreRestaurante`, `telefono`, `direccion`, `estado`) VALUES ('KFC','321654987','cra 68 b #32-25 sur','1');
-INSERT INTO `restaurantes`(`nombreRestaurante`, `telefono`, `direccion`, `estado`) VALUES ('Jennos Pizza','326544987','cra 69 b #32-26 Norte','1');
-INSERT INTO `restaurantes`(`nombreRestaurante`, `telefono`, `direccion`, `estado`) VALUES ('le chat noir','321659876','Avenida 15 d #58-25','1');
+INSERT INTO `restaurantes`(`nombreRestaurante`, `telefono`, `direccion`, `estado`) VALUES ('KFC','321654987','cra 68 b #32-25 sur','1','Huila');
+INSERT INTO `restaurantes`(`nombreRestaurante`, `telefono`, `direccion`, `estado`) VALUES ('Jennos Pizza','326544987','cra 69 b #32-26 Norte','1','Cundinamarca');
+INSERT INTO `restaurantes`(`nombreRestaurante`, `telefono`, `direccion`, `estado`) VALUES ('le chat noir','321659876','Avenida 15 d #58-25','1','Meta');
 
 
 INSERT INTO `parametrosrestaurantes`(`idParametro`, `idRestaurante`, `valor`) VALUES ('1','1','disponible');

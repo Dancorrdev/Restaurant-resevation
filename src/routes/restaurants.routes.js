@@ -1,14 +1,18 @@
 const express = require("express");
 const router = express.Router();
 const pool = require("../database");
+const apiJs= require("../lib/api")
+
+
 
 router.get("/new", (req, res) => {
   res.render("restaurant/create");
 });
 
 router.post("/new", async (req, res) => {
-  const { nombreRestaurante, telefono, direccion } = req.body;
-  const newRestaurant = { nombreRestaurante, telefono, direccion, estado: 1 };
+  
+  const { nombreRestaurante, telefono, direccion, departamento } = req.body;
+  const newRestaurant = { nombreRestaurante, telefono, direccion,departamento, estado: 1 };
   await pool.query("INSERT INTO restaurantes SET ?", [newRestaurant]);
   res.redirect("/restaurants");
 });
@@ -24,8 +28,8 @@ router.get("/edit/:id", async (req, res) => {
 
 router.post("/edit/:id", async (req, res) => {
   const { id } = req.params;
-  const { nombreRestaurante, telefono, direccion } = req.body;
-  const restaurant = { nombreRestaurante, telefono, direccion, estado: 1 };
+  const { nombreRestaurante, telefono, direccion, departamento } = req.body;
+  const restaurant = { nombreRestaurante, telefono, direccion, departamento, estado: 1 };
   await pool.query("UPDATE restaurantes SET ? WHERE idRestaurante = ?", [
     restaurant,
     id,
